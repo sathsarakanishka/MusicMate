@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">VibeVault</string>
+    <string name="logo">"@drawable/logo"</string>
+    <string name="regi" hyperlink="activity_register.xml"><u>SIGNUP</u></string>
 </resources>
