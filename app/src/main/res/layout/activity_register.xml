@@ -9,6 +9,7 @@
 
     <TextView
         android:id="@+id/textView2"
+        android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Create Account"
@@ -39,6 +40,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:inputType="text"
+                android:id="@+id/userName"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:hint="User Name" />
@@ -52,6 +55,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:hint="Email"
+                    android:id="@+id/txtEmail"
                     android:inputType="textEmailAddress" />
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -63,6 +67,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
+                        android:id="@+id/Password"
                         android:hint="Password"
                         android:inputType="textPassword" />
 
@@ -75,6 +80,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="10dp"
+                            android:id="@+id/Cpass"
                             android:hint="Confirm Password"
                             android:inputType="textPassword" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -90,9 +96,11 @@
         android:layout_marginTop="15dp"
         android:text="Favorite Genres :"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.002"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.002" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -107,30 +115,30 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.055">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:text="Button" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/pop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="Pop"
+            android:layout_marginRight="5dp"/>
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/Rock"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="Rock Hop" />
+
+        <Button
+            android:id="@+id/Jazz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Jazz" />
     </LinearLayout>
 
     <LinearLayout
@@ -148,27 +156,32 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/Classical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:text="Button"
-            android:layout_marginRight="5dp"/>
+            android:text="Classical" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/EDM"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:text="EDM" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/SignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="561dp" />
+        android:text="SignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        app:layout_constraintVertical_bias="0.462" />
 </androidx.constraintlayout.widget.ConstraintLayout>

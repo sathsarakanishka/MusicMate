@@ -31,6 +31,10 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         txtF1 = findViewById(R.id.txtF1);
         txtF2 = findViewById(R.id.txtF2);
         txtF3 = findViewById(R.id.txtF3);
+
+        btnChangePass.setOnClickListener(this);
+        btnEditProfile.setOnClickListener(this);
+        btnLogout.setOnClickListener(this);
     }
 
     @Override
